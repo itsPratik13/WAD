@@ -1,0 +1,144 @@
+/* style.css */
+
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header Styling */
+  .header {
+    background-color: #ff6347;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Footer Styling */
+  .footer {
+    background-color: #ff6347;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1rem;
+  }
+  
+  .footer h4 {
+    font-size: 1.2rem;
+  }
+  
+  /* Content Styling */
+  .content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Intro text styling */
+  .intro-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  /* Image Gallery Styling */
+  .image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+  }
+  
+  .gallery-img {
+    width: 32%; /* Set width to 32% for 3 images side by side */
+    max-width: 300px;
+    height: 200px; /* Set a fixed height */
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .gallery-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Button Styling */
+  .ui-btn {
+    background-color: #ff6347;
+    border-color: #e5533c;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 10px 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ui-btn:hover {
+    background-color: #e5533c;
+  }
+  
+  /* Form Styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  textarea {
+    height: 120px;
+    resize: none;
+  }
+  
+  /* Additional Media Query for responsiveness */
+  @media (max-width: 600px) {
+    .gallery-img {
+      width: 48%; /* Adjust for mobile screens to show 2 images per row */
+      max-width: 100%;
+    }
+  
+    .intro-text {
+      font-size: 1.3rem;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .gallery-img {
+      width: 100%; /* Display 1 image per row on very small screens */
+    }
+  
+    .header h1 {
+      font-size: 2rem;
+    }
+  
+    .footer h4 {
+      font-size: 1rem;
+    }
+  }
+  

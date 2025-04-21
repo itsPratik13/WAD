@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pet Lover's Mobile Site</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        /* Basic styles for the page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Ensure all images are responsive */
+        img {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+        }
+
+        /* Center content and provide padding */
+        .ui-content {
+            padding: 15px;
+        }
+
+        /* Adjust layout for the text and buttons */
+        .ui-btn {
+            margin-top: 15px;
+        }
+
+        /* Page-specific styles */
+        .header-title {
+            font-size: 1.8em;
+            text-align: center;
+            margin: 15px 0;
+        }
+
+        .footer-title {
+            text-align: center;
+            font-size: 1.2em;
+            margin-top: 15px;
+        }
+
+        /* Media queries for different screen sizes */
+        /* For larger screens like tablets and desktops */
+        @media (min-width: 768px) {
+            .ui-content {
+                padding: 30px;
+            }
+            
+            .header-title {
+                font-size: 2.5em;
+            }
+
+            .footer-title {
+                font-size: 1.5em;
+            }
+
+            img {
+                max-width: 80%; /* Limit max width for larger screens */
+                margin: 10px auto;
+            }
+
+            .ui-btn {
+                padding: 12px 25px;
+                font-size: 1.2em;
+            }
+        }
+
+        /* For smaller devices like phones (portrait) */
+        @media (max-width: 767px) {
+            .header-title {
+                font-size: 1.5em;
+            }
+
+            .footer-title {
+                font-size: 1em;
+            }
+
+            img {
+                max-width: 100%; /* Take up full width on small screens */
+            }
+
+            .ui-btn {
+                font-size: 1em;
+                padding: 10px 20px;
+            }
+        }
+
+        /* For very small devices (e.g., smaller phones) */
+        @media (max-width: 480px) {
+            .header-title {
+                font-size: 1.3em;
+            }
+
+            .footer-title {
+                font-size: 1em;
+            }
+
+            .ui-btn {
+                font-size: 0.9em;
+                padding: 8px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Start of first page: Pet Introduction -->
+    <div data-role="page" id="page1">
+        <div data-role="header">
+            <h1 class="header-title">Meet My Pet!</h1>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <h2>Introducing Max!</h2>
+            <p>Friendly dog who loves playing outside, swimming, and of course, getting belly rubs!</p>
+            
+            <!-- Responsive images -->
+            <img src="img2.jpg" alt="Cute Dog Max" />
+            <img src="img2.jpg" alt="Cute Dog Max" />
+            <img src="img2.jpg" alt="Cute Dog Max" />
+            
+            <p>Max loves to fetch his favorite ball and enjoys long walks in the park. He's the best companion you could ever ask for!</p>
+
+            <a href="#page2" class="ui-btn ui-btn-inline">See More Cute Pets</a>
+        </div><!-- /content -->
+
+        <div data-role="footer">
+            <h4 class="footer-title">Max's Pet Adventures</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+    <!-- Start of second page: Pet Gallery -->
+    <div data-role="page" id="page2">
+        <div data-role="header">
+            <h1 class="header-title">Pet Gallery</h1>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <h2>Here are some of our other favorite pets!</h2>
+            
+            <div style="text-align:center;">
+                <!-- Responsive images -->
+                <img src="img1.jpg" alt="Cute Kitten" />
+                <p>Isn't this kitten adorable?</p>
+                
+                <img src="img3.jpg" alt="Cute Puppy" />
+                <p>Here’s a puppy who loves to play and snuggle!</p>
+            </div>
+
+            <a href="#page1" class="ui-btn ui-btn-inline">Back to Max</a>
+        </div><!-- /content -->
+
+        <div data-role="footer">
+            <h4 class="footer-title">Pet Gallery</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+</body>
+</html>
